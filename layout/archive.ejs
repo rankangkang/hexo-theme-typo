@@ -1,0 +1,15 @@
+<ul class="archives">
+  <% page.posts.each(function (post) { %>
+  <li class="archive-item">
+    <span class="date"><%= date(post.date, "YYYY.MM.DD") %></span>
+    <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <!-- <div class="tags">
+      <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
+        <div class="tag-item"><%- tag %></div>
+      <% }) %>
+    </div> -->
+  </li>
+  <% }) %>
+</ul>
+
+<%- partial('_partial/paginator') %>

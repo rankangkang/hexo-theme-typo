@@ -1,0 +1,21 @@
+<div class="post-list">
+  <% page.posts.each(function (post) { %>
+  <section class="post-item">
+    <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <div class="post-item-summary">
+      <%- strip_html(post.content).substr(0, 240) %>
+      <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
+    </div>
+    <div class="post-item-extra">
+      <div class="date"><%- date(post.date, "YYYY.MM.DD") %></div>
+      <div class="tags">
+        <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
+          <div class="tag-item"><%- tag %></div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+  <% }) %>
+</div>
+
+<%- partial('_partial/paginator') %>

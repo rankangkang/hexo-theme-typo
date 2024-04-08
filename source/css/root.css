@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+:root {
+  --font-color: #000;
+  --font-color-secondary: #666;
+  --font-color-extra: #aaa;
+  --font-color-refer: #1c2032;
+
+  --color-hr: #ddd;
+  --color-link: #4078F2;
+  --color-background: #fff;
+
+  /* 激活与未激活状态 */
+  --color-unactive: #eeeeee;
+  --color-active: #000;
+
+  /* 列表项颜色 */
+  --color-list-item-even: #fff;
+  --color-list-item-odd: #fafafa;
+
+  /* 文章颜色 */
+  --color-post-content: #333333;
+  /* code 背景色 */
+  --color-background-code: #f8f8f8;
+  --color-border-code: #e7eaed;
+
+  --color-hashtag: #51525d;
+
+  --main-width: 1080px;
+}
+
+@media (prefers-color-scheme: light) {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #fff;
+    --font-color-secondary: #cccccc;
+    --font-color-extra: #aaa;
+    --font-color-refer: #ccd0e0;
+
+    --color-hr: #cccccc;
+    --color-link: #61AEEE;
+    --color-background: #3b3e4a;
+
+    /* 激活与未激活状态 */
+    --color-unactive: #494949;
+    --color-active: #eeeeee;
+
+    --color-list-item-even: #3b3e4a;
+    --color-list-item-odd: #383c48;
+
+    /* 文章颜色 */
+    --color-post-content: #fefefe;
+    /* code 背景色 */
+    --color-background-code: #292c34;
+    --color-border-code: #292c34;
+
+    --color-hashtag: #e9ebf1;
+
+    --font-color-post: #dce4dd;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #c1c1c2;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
