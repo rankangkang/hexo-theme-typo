@@ -1,11 +1,7 @@
-# html lang
-language: zh
-
 title: typo
 favicon: /icon.svg
 icon: /icon.svg
 
-# main menu navigation
 menu:
   archives: /archives
   about: /about

@@ -1,12 +1,8 @@
 {
   "name": "hexo-theme-typo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "A simple theme for hexo.",
+  "keywords": ["hexo", "hexo-theme", "hexo-theme-typo"],
+  "author": "cmkk",
   "license": "ISC"
 }
