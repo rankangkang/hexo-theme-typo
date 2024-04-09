@@ -214,7 +214,6 @@ a {
 .archive-item span {
   width: 108px;
   color: var(--font-color-secondary);
-  line-height: 100%;
 }
 
 .archive-item>.title {
