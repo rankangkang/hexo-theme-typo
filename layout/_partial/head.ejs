@@ -13,10 +13,10 @@
   <%- favicon_tag(theme.favicon) %>
   <% } %>
 
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <% if (is_post()){ %>
   <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
   <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
-
   <% } %>
 
   <!-- 字体 -->
@@ -28,6 +28,4 @@
   <%- css('css/root.css') %>
   <%- css('css/style.css') %>
   <%- css('css/post.css') %>
-
-  <script type="text/javascript" src="/js/theme.js" defer></script>
 </head>
