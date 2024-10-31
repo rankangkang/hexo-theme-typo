@@ -75,3 +75,9 @@ menu:
 
 copyright: 2024 typo
 ```
+
+## 🔗 Wanna build your own hexo theme?
+
+👉🏻 Fork this [repo](https://github.com/rankangkang/hexo-themes) to get started quickly.
+
+😁 This is a simple pnpm monorepo template to help you develop Hexo themes.

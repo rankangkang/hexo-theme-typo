@@ -76,3 +76,9 @@ menu:
 
 copyright: 2024 typo
 ```
+
+## 🔗 想要开发一个自己的主题？
+
+👉🏻 来 [这里](https://github.com/rankangkang/hexo-themes) 快速开始，这可能会很有帮助 ~
+
+😁 Happy coding ~
