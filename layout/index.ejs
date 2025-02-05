@@ -1,5 +1,5 @@
 <div class="post-list">
-  <% page.posts.each(function (post, index) { %>
+  <% page.posts.each(function (post) { %>
   <section class="post-item">
     <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
     <div class="post-item-summary">
