@@ -1,9 +1,9 @@
 <div class="post-list">
-  <% page.posts.each(function (post) { %>
+  <% page.posts.each(function (post, index) { %>
   <section class="post-item">
     <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
     <div class="post-item-summary">
-      <%- strip_html(post.content).substr(0, 240) %>
+      <%- strip_html(post.excerpt || post.content).substr(0, 240) %>
       <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
     </div>
     <div class="post-item-extra">
