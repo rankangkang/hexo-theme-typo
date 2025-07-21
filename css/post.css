@@ -1,0 +1,524 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.post-title {
+  flex: 0 0 100%;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--font-color);
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: var(--font-color-extra);
+  flex: 0 0 100%;
+  margin-bottom: 32px;
+}
+
+.post-content {
+  width: 100%;
+  color: var(--color-post-content);
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+}
+
+.post-content h1::before,
+.post-content h2::before,
+.post-content h3::before,
+.post-content h4::before,
+.post-content h5::before,
+.post-content h6::before {
+  content: "⌗";
+  padding-right: 10px;
+  color: var(--color-hashtag);
+  font-weight: 600;
+}
+
+.post-content details {
+  display: block;
+}
+
+.post-content summary {
+  display: list-item;
+}
+
+.post-content a {
+  background-color: transparent;
+}
+
+.post-content a:active,
+.post-content a:hover {
+  outline-width: 0;
+}
+
+.post-content strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.post-content h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.post-content img {
+  border-style: none;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.post-content code,
+.post-content kbd,
+.post-content pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.post-content hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.post-content input {
+  font: inherit;
+  margin: 0;
+}
+
+.post-content input {
+  overflow: visible;
+}
+
+.post-content [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.post-content * {
+  box-sizing: border-box;
+}
+
+.post-content input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.post-content a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content strong {
+  font-weight: 600;
+}
+
+.post-content hr:before {
+  content: "";
+  display: table;
+}
+
+.post-content hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.post-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.post-content td,
+.post-content th {
+  padding: 0;
+}
+
+.post-content details summary {
+  cursor: pointer;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.post-content h1 {
+  font-size: 32px;
+}
+
+.post-content h1,
+.post-content h2 {
+  font-weight: 600;
+}
+
+.post-content h2 {
+  font-size: 28px;
+}
+
+.post-content h3 {
+  font-size: 24px;
+}
+
+.post-content h3,
+.post-content h4 {
+  font-weight: 600;
+}
+
+.post-content h4 {
+  font-size: 18px;
+}
+
+.post-content h5 {
+  font-size: 16px;
+}
+
+.post-content h5,
+.post-content h6 {
+  font-weight: 600;
+}
+
+.post-content h6 {
+  font-size: 14px;
+}
+
+.post-content p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.post-content blockquote {
+  margin: 0;
+}
+
+.post-content ol,
+.post-content ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.post-content ol ol,
+.post-content ul ol {
+  list-style-type: lower-roman;
+}
+
+.post-content ol ol ol,
+.post-content ol ul ol,
+.post-content ul ol ol,
+.post-content ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.post-content dd {
+  margin-left: 0;
+}
+
+.post-content code,
+.post-content pre {
+  font-family: JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo,
+    Courier, monospace;
+  font-size: 14px;
+}
+
+.post-content input::-webkit-inner-spin-button,
+.post-content input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.post-content:before {
+  content: "";
+  display: table;
+}
+
+.post-content:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.post-content > :first-child {
+  margin-top: 0 !important;
+}
+
+.post-content > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.post-content a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content blockquote,
+.post-content dl,
+.post-content ol,
+.post-content p,
+.post-content pre,
+.post-content table,
+.post-content ul {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.post-content hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed var(--color-hr);
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.post-content blockquote {
+  border-left: 0.25em solid var(--font-color-refer);
+  color: var(--font-color-refer);
+  padding: 0 1em;
+  /* margin-left: 1em; */
+}
+
+.post-content blockquote > :first-child {
+  margin-top: 0;
+}
+
+.post-content blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.post-content h1 {
+  font-size: 2em;
+}
+
+.post-content h1,
+.post-content h2 {
+  padding-bottom: 0.3em;
+}
+
+.post-content h2 {
+  font-size: 1.5em;
+}
+
+.post-content h3 {
+  font-size: 1.25em;
+}
+
+.post-content h4 {
+  font-size: 1em;
+}
+
+.post-content h5 {
+  font-size: 0.875em;
+}
+
+.post-content h6 {
+  font-size: 0.85em;
+}
+
+.post-content ol,
+.post-content ul {
+  padding-left: 2em;
+}
+
+.post-content ol ol,
+.post-content ol ul,
+.post-content ul ol,
+.post-content ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.post-content li {
+  word-wrap: break-all;
+}
+
+.post-content li > p {
+  margin-top: 16px;
+}
+
+.post-content li + li {
+  margin-top: 0.25em;
+}
+
+.post-content dl {
+  padding: 0;
+}
+
+.post-content dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.post-content dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.post-content table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.post-content table th {
+  font-weight: 600;
+}
+
+.post-content table td,
+.post-content table th {
+  border: 1px solid #6b6b6b;
+  padding: 6px 13px;
+}
+
+.post-content table tr {
+  border-top: 1px solid #c6cbd1;
+}
+
+.post-content img {
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.post-content img[align="right"] {
+  padding-left: 20px;
+}
+
+.post-content img[align="left"] {
+  padding-right: 20px;
+}
+
+.post-content code {
+  background-color: var(--color-background-code);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: 0.2em 0.4em;
+  vertical-align: text-top;
+}
+
+.post-content pre {
+  word-wrap: normal;
+}
+
+/* 键盘按键 */
+.post-content kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.hljs {
+  width: 100%;
+  margin-left: 0px;
+  background: var(--color-background-code);
+  border-radius: 3px;
+  border: 1px solid var(--color-border-code);
+  margin: 15px 0;
+}
+
+.hljs table td,
+.hljs table th,
+.hljs table tr {
+  border: none;
+  padding: 0px;
+}
+
+.hljs-ln-line.hljs-ln-numbers {
+  text-align: center;
+  padding-right: 10px;
+  border-right: 1px solid #dddddd;
+  margin-right: 12px;
+}
+
+.hljs > table {
+  margin-bottom: 0;
+}
+
+.hljs .code {
+  width: 100%;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+
+pre code::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+pre code::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #c1c1c2;
+}
+
+pre code::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.post-content ul:has(input[type="checkbox"]) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-content ul:has(input[type="checkbox"]) li {
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+/* 确保 checkbox 列表中的 checkbox 样式正确 */
+.post-content ul:has(input[type="checkbox"]) input[type="checkbox"] {
+  margin-right: 0.5em;
+  vertical-align: baseline;
+}
