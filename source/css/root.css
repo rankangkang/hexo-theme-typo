@@ -89,13 +89,17 @@ dd {
   margin: 0;
 }
 
-ul,
 ol {
-  list-style: none;
+  list-style-type: decimal;
 }
 
 ul {
-  padding-inline-start: 0;
+  list-style-type: disc;
+}
+
+/* 确保包含 checkbox 的 ul 列表不显示圆点 */
+ul:has(li>input[type="checkbox"]) {
+  list-style: none;
 }
 
 html,
